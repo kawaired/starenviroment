@@ -76,7 +76,7 @@ public class DrawPlanet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < planetdatalist.Count; i++)
+        for (int i = 0; i < planetclasslist.Count; i++)
         {
             GameObject planetobj = CreatePlanet(i);
 
@@ -101,9 +101,9 @@ public class DrawPlanet : MonoBehaviour
         else
         {
             CreateLayerMesh(planetobj.transform, planetsize, 0).material = CreateBgMat(liquidtexlist[UnityEngine.Random.Range(0, liquidtexlist.Count)]);
-            for (int i = 0; i < planetdatalist[idx].planetlist.Count; i++)
+            for (int i = 0; i < planetclasslist[idx].planetlist.Count; i++)
             {
-                CreateLayerMesh(planetobj.transform, planetsize, i + 1).material = CreateLayerMat(planetdatalist[idx].planetlist[i]);
+                CreateLayerMesh(planetobj.transform, planetsize, i + 1).material = CreateLayerMat(liquidtex, planetclasslist[idx].planetlist[i]);
             }
         }
         return planetobj;

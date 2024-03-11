@@ -313,7 +313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a02c1be33eae9f4681b74faeabea899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  planetcount: 0
+  planetcount: 2
   planetshader: {fileID: 4800000, guid: 97f981e31666b3346bb29b70c413c3eb, type: 3}
   bgshader: {fileID: 4800000, guid: a2c06233ad0ded443adbf68b917f5aa6, type: 3}
   liquidtex: {fileID: 2800000, guid: 6b14a1de45a32b047aa2c02a15032133, type: 3}
@@ -465,13 +465,13 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 94937530b838b714aa0f14743f70b0a5, type: 3}
   - {fileID: 2800000, guid: da919637500516d4e9078df0524d6caf, type: 3}
   - {fileID: 2800000, guid: 7f685a38f250c93419fa47345949871e, type: 3}
-  planetdatalist:
+  planetclasslist:
   - planetlist:
-    - maintex: {fileID: 2800000, guid: 7bf5551666eeda846905df6fa9179518, type: 3}
-      masktex: {fileID: 2800000, guid: b4b41aaaa081a4547ad3713aa6d6dffb, type: 3}
-    - maintex: {fileID: 2800000, guid: 68ce2fabe5c3e2446b2e3985b2c43318, type: 3}
-      masktex: {fileID: 2800000, guid: 2e8f3570a52adc1489994d0c009a3268, type: 3}
-  havegas: 1
+    - {fileID: 2800000, guid: ba9bc52666401174cb2153a06a04c089, type: 3}
+    - {fileID: 2800000, guid: 201b40f367b930f40a37de7ebe09e2df, type: 3}
+    - {fileID: 2800000, guid: 6e10950a8bc504b4590a5a63b83c601e, type: 3}
+  landmasklist: []
+  havegas: 0
 --- !u!114 &581442821
 MonoBehaviour:
   m_ObjectHideFlags: 0
